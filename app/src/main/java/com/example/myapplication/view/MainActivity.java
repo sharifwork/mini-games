@@ -41,7 +41,6 @@ private TextView textView;
 
 
         Intent intent = new Intent(MainActivity.this, PreGameActivity.class);
-
         startActivity(intent);
     }
 

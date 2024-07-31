@@ -54,4 +54,8 @@ public class Team {
     public Cell getEnemyLastCell(){
         return enemyCells.get(enemyCells.size()-1);
     }
+
+    public void setPlayers(ArrayList<String> players) {
+        this.players = players;
+    }
 }

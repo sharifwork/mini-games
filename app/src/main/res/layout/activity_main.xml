@@ -8,25 +8,25 @@
     android:background="#FFEB3B"
     tools:context=".view.MainActivity">
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="146dp"
-        android:layout_height="153dp"
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="184dp"
+        android:layout_height="176dp"
         android:onClick="clickButtonStartGame"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/n1"
-        tools:srcCompat="@drawable/o" />
+        app:srcCompat="@drawable/o" />
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="140dp"
-        android:layout_height="142dp"
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="178dp"
+        android:layout_height="180dp"
         android:onClick="clickButtonHistoryGame"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton"
-        app:layout_constraintStart_toStartOf="@+id/imageButton"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        tools:srcCompat="@drawable/blank" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/x" />
 </androidx.constraintlayout.widget.ConstraintLayout>

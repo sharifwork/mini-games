@@ -10,12 +10,17 @@ import java.util.ArrayList;
 
 public class GameController {
 
-    private Team team1;
-    private Team team2;
+    private Team team1 ;
+    private Team team2 ;
     private boolean isTeam1Turn ;
     private int roundTime;
     private int roundNumber;
     private final int[] numCodes = new int[3];
+
+    GameController(){
+        team1 = new Team() ;
+        team2 = new Team() ;
+    }
 
     public Team getTeam1() {
         return team1;
