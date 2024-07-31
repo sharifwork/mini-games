@@ -55,19 +55,26 @@ public class AdderPlayer {
         this.playerName = playerName;
     }
 
-    public void add(){
+    public void addAction(){
         isAddState = false;
         imageView.setImageResource(ImagesResource.REMOVE.getImg());
          number.setVisibility(View.VISIBLE);
          playerName.setVisibility(View.VISIBLE);
     }
 
-    public void remove(){
+    public void removeAction(){
         isAddState = true;
         imageView.setImageResource(ImagesResource.ADD.getImg());
         number.setVisibility(View.INVISIBLE);
         playerName.setVisibility(View.INVISIBLE);
         playerName.setText("");
+    }
+
+    public static boolean checkPreviousTextFieldNoEmpty(int end){
+        for (int i = 0; i <= end; i++) {
+            if(adderPlayers.get(i).playerName.getText().toString().equals("")) return false;
+        }
+        return true;
     }
 
     public static AdderPlayer getAdderPlayerByImageView(View imageView){

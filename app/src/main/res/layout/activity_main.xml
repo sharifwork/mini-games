@@ -5,28 +5,29 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFEB3B"
+    android:background="@drawable/wood_bg"
     tools:context=".view.MainActivity">
 
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="184dp"
-        android:layout_height="176dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
         android:onClick="clickButtonStartGame"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/o" />
+        app:srcCompat="@drawable/game" />
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="178dp"
-        android:layout_height="180dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="50sp"
         android:onClick="clickButtonHistoryGame"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/x" />
+        app:srcCompat="@drawable/cup" />
 </androidx.constraintlayout.widget.ConstraintLayout>

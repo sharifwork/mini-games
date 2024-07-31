@@ -5,8 +5,9 @@ import androidx.annotation.DrawableRes;
 import com.example.myapplication.R;
 
 public enum ImagesResource {
-    REMOVE(R.drawable.x)
-    ,ADD(R.drawable.o);
+    REMOVE(R.drawable.remove)
+    ,ADD(R.drawable.add)
+    ,RUN(R.drawable.run);
 
 
     @DrawableRes private int img ;

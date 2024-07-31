@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -111,6 +112,7 @@ public class PreGameActivity extends AppCompatActivity {
             controller.changeTurn();
             endIndexAddPlayers = 0;
             clearParameters();
+            ((ImageView)view).setImageResource(ImagesResource.RUN.getImg());
         }
         else{
             Intent intent = new Intent(PreGameActivity.this, GameActivity.class);
@@ -168,8 +170,12 @@ public class PreGameActivity extends AppCompatActivity {
         if(adderPlayer.equals(null)) return;
 
         if(adderPlayer.isAddState()){
+            if(!AdderPlayer.checkPreviousTextFieldNoEmpty(endIndexAddPlayers)){
+                Toast.makeText(this, "player name is empty", Toast.LENGTH_SHORT).show();
+                return;
+            }
             endIndexAddPlayers = addPlayersList.indexOf(adderPlayer);
-            adderPlayer.add();
+            adderPlayer.addAction();
             if(endIndexAddPlayers != addPlayersList.size()-1){
                 addPlayersList.get(endIndexAddPlayers +1).setAddState(true);
                 addPlayersList.get(endIndexAddPlayers +1).getImageView().setImageResource(ImagesResource.ADD.getImg());
@@ -183,7 +189,7 @@ public class PreGameActivity extends AppCompatActivity {
             for (int i = indexAdderPlayer+1 ; i < addPlayersList.size(); i++) {
                 (addPlayersList.get(i-1).getPlayerName()).setText((addPlayersList.get(i).getPlayerName()).getText());
             }
-            addPlayersList.get(endIndexAddPlayers).remove();
+            addPlayersList.get(endIndexAddPlayers).removeAction();
             if(endIndexAddPlayers<addPlayersList.size()-1){
                 addPlayersList.get(endIndexAddPlayers+1).getImageView().setVisibility(View.INVISIBLE);
             }
