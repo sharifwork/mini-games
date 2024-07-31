@@ -41,6 +41,10 @@ public class PreGameActivity extends AppCompatActivity {
         });
 
         initializeView();
+        resetView();
+        controller.setTeam1Turn(true);
+        teamName.setText("team1");
+        endIndexAddPlayers = 0;
 
     }
 
@@ -54,28 +58,19 @@ public class PreGameActivity extends AppCompatActivity {
 
         addPlayersList = new ArrayList<>();
         AdderPlayer adderPlayer1 = new AdderPlayer(findViewById(R.id.addPlayer1) , findViewById(R.id.player1) , findViewById(R.id.num1));
-        adderPlayer1.setAddState(false);
         addPlayersList.add(adderPlayer1) ;
 
         AdderPlayer adderPlayer2 = new AdderPlayer(findViewById(R.id.addPlayer2), findViewById(R.id.player2) , findViewById(R.id.num2));
-        adderPlayer2.setAddState(true);
         addPlayersList.add(adderPlayer2) ;
 
         addPlayersList.add(new AdderPlayer(findViewById(R.id.addPlayer3), findViewById(R.id.player3) , findViewById(R.id.num3))) ;
         addPlayersList.add(new AdderPlayer(findViewById(R.id.addPlayer4), findViewById(R.id.player4) , findViewById(R.id.num4))) ;
 
-        teamName.setText("team1");
-
     }
 
-    public void clickHandler(){
-
-    }
     public void clickSubmit(View view) {
+
         String teamName = this.teamName.getText().toString();
-//        if (teamName.equals("")) {
-//            Toast.makeText(this, "team name is empty", Toast.LENGTH_SHORT).show();
-//        }
         if(teamName.equals("")){
             if(controller.isTeam1Turn()) teamName = "team1";
             else teamName = "team2";
@@ -103,15 +98,15 @@ public class PreGameActivity extends AppCompatActivity {
             Toast.makeText(this, "number of players is less than 2", Toast.LENGTH_SHORT).show();
             return;
         }
-
         controller.setPlayersList(players);
-        controller.setRoundNumber(round);
-        controller.setTimeEveryRound(time);
 
         if(controller.isTeam1Turn()){
+            controller.setRoundNumber(round);
+            controller.setTimeEveryRound(time);
             controller.changeTurn();
             endIndexAddPlayers = 0;
-            clearParameters();
+            this.teamName.setText("team2");
+            resetView();
             ((ImageView)view).setImageResource(ImagesResource.RUN.getImg());
         }
         else{
@@ -121,7 +116,7 @@ public class PreGameActivity extends AppCompatActivity {
         }
     }
 
-    public void clearParameters(){
+    public void resetView(){
 
 
         for (EditText word : words) {
@@ -131,7 +126,6 @@ public class PreGameActivity extends AppCompatActivity {
         AdderPlayer.clear();
 
         if(!controller.isTeam1Turn()){
-            teamName.setText("team2");
             View radioGroups = findViewById(R.id.layoutRadioGroups);
             radioGroups.setVisibility(View.INVISIBLE);
         }
@@ -167,10 +161,11 @@ public class PreGameActivity extends AppCompatActivity {
 
     public void clickAdderPlayer(View view){
         AdderPlayer adderPlayer = AdderPlayer.getAdderPlayerByImageView(view);
+        int indexAdderPlayer = addPlayersList.indexOf(adderPlayer);
         if(adderPlayer.equals(null)) return;
 
         if(adderPlayer.isAddState()){
-            if(!AdderPlayer.checkPreviousTextFieldNoEmpty(endIndexAddPlayers)){
+            if(indexAdderPlayer != 0 && !AdderPlayer.checkPreviousTextFieldNoEmpty(endIndexAddPlayers)){
                 Toast.makeText(this, "player name is empty", Toast.LENGTH_SHORT).show();
                 return;
             }
@@ -184,8 +179,6 @@ public class PreGameActivity extends AppCompatActivity {
 
         }
         else{
-
-            int indexAdderPlayer = addPlayersList.indexOf(adderPlayer);
             for (int i = indexAdderPlayer+1 ; i < addPlayersList.size(); i++) {
                 (addPlayersList.get(i-1).getPlayerName()).setText((addPlayersList.get(i).getPlayerName()).getText());
             }

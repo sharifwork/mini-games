@@ -11,8 +11,12 @@ import com.example.myapplication.utlls.Util;
 import java.util.ArrayList;
 
 public class PregameController {
-    private boolean isTeam1Turn = true;
+    private boolean isTeam1Turn;
     private GameController gameController = new GameController();
+
+    public PregameController(){
+        isTeam1Turn = true;
+    }
 
     public void setTeamName(String name){
         getTeamThisTurn().setName(name);
@@ -25,9 +29,6 @@ public class PregameController {
         if (isTeam1Turn) isTeam1Turn = false;
         else isTeam1Turn = true;
     }
-//    public Result startGame(){
-//
-//    }
 
     public Team getTeamThisTurn(){
         if(isTeam1Turn) return gameController.getTeam1();
@@ -74,5 +75,7 @@ public class PregameController {
         return new Result(true , "player from players removed successfully");
     }
 
-
+    public void setTeam1Turn(boolean team1Turn) {
+        isTeam1Turn = team1Turn;
+    }
 }

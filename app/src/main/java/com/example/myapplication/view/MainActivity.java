@@ -38,8 +38,6 @@ private TextView textView;
     }
 
     public void clickButtonStartGame(View view){
-
-
         Intent intent = new Intent(MainActivity.this, PreGameActivity.class);
         startActivity(intent);
     }
