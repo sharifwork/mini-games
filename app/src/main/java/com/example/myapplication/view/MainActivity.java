@@ -14,7 +14,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.myapplication.DoozActivity;
-import com.example.myapplication.PuzzleActivity;
 import com.example.myapplication.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -38,7 +37,7 @@ private TextView textView;
     }
 
     public void clickButtonStartGame(View view){
-        Intent intent = new Intent(MainActivity.this, PreGameActivity.class);
+        Intent intent = new Intent(MainActivity.this, GameActivity.class);
         startActivity(intent);
     }
 
