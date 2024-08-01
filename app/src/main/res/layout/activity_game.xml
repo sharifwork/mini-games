@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/game"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".view.GameActivity">
 
@@ -16,6 +16,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -128,38 +134,64 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@android:drawable/gallery_thumb"
+                android:backgroundTint="@color/design_default_color_secondary_variant"
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="168sp"
+                    android:layout_height="128sp"
                     android:layout_margin="10sp"
+                    android:background="?attr/popupMenuBackground"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView12"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="+1" />
+                            android:fontFamily="sans-serif-black"
+                            android:text="+1"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView8"
-                            android:layout_width="70sp"
+                            android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="حسن" />
+                            android:fontFamily="sans-serif-thin"
+                            android:text="حسن"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:typeface="normal" />
 
                     </LinearLayout>
 
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="5sp"
+                        android:layout_weight="1" />
+
                     <LinearLayout
-                        android:layout_width="52dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
@@ -169,25 +201,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView50"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
                                 android:id="@+id/textView51"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -195,25 +257,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView52"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView53"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -221,60 +313,115 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView54"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView55"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                     </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="168sp"
+                    android:layout_height="128sp"
                     android:layout_margin="10sp"
+                    android:background="?attr/popupMenuBackground"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView12"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="+1" />
+                            android:fontFamily="sans-serif-black"
+                            android:text="+1"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView8"
-                            android:layout_width="70sp"
+                            android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="حسن" />
+                            android:fontFamily="sans-serif-thin"
+                            android:text="حسن"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:typeface="normal" />
 
                     </LinearLayout>
 
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="5sp"
+                        android:layout_weight="1" />
+
                     <LinearLayout
-                        android:layout_width="52dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
@@ -284,25 +431,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView50"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
                                 android:id="@+id/textView51"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -310,25 +487,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView52"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView53"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -336,60 +543,115 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView54"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView55"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                     </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="168sp"
+                    android:layout_height="128sp"
                     android:layout_margin="10sp"
+                    android:background="?attr/popupMenuBackground"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView12"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="+1" />
+                            android:fontFamily="sans-serif-black"
+                            android:text="+1"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView8"
-                            android:layout_width="70sp"
+                            android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="حسن" />
+                            android:fontFamily="sans-serif-thin"
+                            android:text="حسن"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:typeface="normal" />
 
                     </LinearLayout>
 
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="5sp"
+                        android:layout_weight="1" />
+
                     <LinearLayout
-                        android:layout_width="52dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
@@ -399,25 +661,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView50"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
                                 android:id="@+id/textView51"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -425,25 +717,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView52"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView53"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -451,60 +773,115 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView54"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView55"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                     </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="168sp"
+                    android:layout_height="128sp"
                     android:layout_margin="10sp"
+                    android:background="?attr/popupMenuBackground"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView12"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="+1" />
+                            android:fontFamily="sans-serif-black"
+                            android:text="+1"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView8"
-                            android:layout_width="70sp"
+                            android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="حسن" />
+                            android:fontFamily="sans-serif-thin"
+                            android:text="حسن"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:typeface="normal" />
 
                     </LinearLayout>
 
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="5sp"
+                        android:layout_weight="1" />
+
                     <LinearLayout
-                        android:layout_width="52dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
@@ -514,25 +891,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView50"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
                                 android:id="@+id/textView51"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -540,25 +947,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView52"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView53"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -566,60 +1003,115 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView54"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView55"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                     </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="168sp"
+                    android:layout_height="128sp"
                     android:layout_margin="10sp"
+                    android:background="?attr/popupMenuBackground"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView12"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="+1" />
+                            android:fontFamily="sans-serif-black"
+                            android:text="+1"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView8"
-                            android:layout_width="70sp"
+                            android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="حسن" />
+                            android:fontFamily="sans-serif-thin"
+                            android:text="حسن"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:typeface="normal" />
 
                     </LinearLayout>
 
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="5sp"
+                        android:layout_weight="1" />
+
                     <LinearLayout
-                        android:layout_width="52dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
@@ -629,25 +1121,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView50"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
                                 android:id="@+id/textView51"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -655,25 +1177,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView52"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView53"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -681,60 +1233,115 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView54"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView55"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                     </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="168dp"
+                    android:layout_height="128dp"
                     android:layout_margin="10sp"
+                    android:background="?attr/popupMenuBackground"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView12"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="+1" />
+                            android:fontFamily="sans-serif-black"
+                            android:text="+1"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView8"
-                            android:layout_width="70sp"
+                            android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="حسن" />
+                            android:fontFamily="sans-serif-thin"
+                            android:text="حسن"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:typeface="normal" />
 
                     </LinearLayout>
 
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="5sp"
+                        android:layout_weight="1" />
+
                     <LinearLayout
-                        android:layout_width="52dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
@@ -744,25 +1351,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView50"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
                                 android:id="@+id/textView51"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -770,25 +1407,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView52"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView53"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -796,28 +1463,59 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView54"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView55"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                     </LinearLayout>
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -831,38 +1529,64 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@android:drawable/gallery_thumb"
+                android:backgroundTint="?attr/colorError"
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="168sp"
+                    android:layout_height="128sp"
                     android:layout_margin="10sp"
+                    android:background="?attr/popupMenuBackground"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView12"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="+1" />
+                            android:fontFamily="sans-serif-black"
+                            android:text="+1"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView8"
-                            android:layout_width="70sp"
+                            android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="حسن" />
+                            android:fontFamily="sans-serif-thin"
+                            android:text="حسن"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:typeface="normal" />
 
                     </LinearLayout>
 
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="5sp"
+                        android:layout_weight="1" />
+
                     <LinearLayout
-                        android:layout_width="52dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
@@ -872,25 +1596,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView50"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
                                 android:id="@+id/textView51"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -898,25 +1652,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView52"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView53"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -924,60 +1708,115 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView54"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView55"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                     </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="168sp"
+                    android:layout_height="128sp"
                     android:layout_margin="10sp"
+                    android:background="?attr/popupMenuBackground"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView12"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="+1" />
+                            android:fontFamily="sans-serif-black"
+                            android:text="+1"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView8"
-                            android:layout_width="70sp"
+                            android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="حسن" />
+                            android:fontFamily="sans-serif-thin"
+                            android:text="حسن"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:typeface="normal" />
 
                     </LinearLayout>
 
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="5sp"
+                        android:layout_weight="1" />
+
                     <LinearLayout
-                        android:layout_width="52dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
@@ -987,25 +1826,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView50"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
                                 android:id="@+id/textView51"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -1013,25 +1882,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView52"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView53"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -1039,60 +1938,115 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView54"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView55"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                     </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="168sp"
+                    android:layout_height="128sp"
                     android:layout_margin="10sp"
+                    android:background="?attr/popupMenuBackground"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView12"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="+1" />
+                            android:fontFamily="sans-serif-black"
+                            android:text="+1"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView8"
-                            android:layout_width="70sp"
+                            android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="حسن" />
+                            android:fontFamily="sans-serif-thin"
+                            android:text="حسن"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:typeface="normal" />
 
                     </LinearLayout>
 
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="5sp"
+                        android:layout_weight="1" />
+
                     <LinearLayout
-                        android:layout_width="52dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
@@ -1102,25 +2056,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView50"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
                                 android:id="@+id/textView51"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -1128,25 +2112,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView52"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView53"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -1154,60 +2168,115 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView54"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView55"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                     </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="168sp"
+                    android:layout_height="128sp"
                     android:layout_margin="10sp"
+                    android:background="?attr/popupMenuBackground"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView12"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="+1" />
+                            android:fontFamily="sans-serif-black"
+                            android:text="+1"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView8"
-                            android:layout_width="70sp"
+                            android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="حسن" />
+                            android:fontFamily="sans-serif-thin"
+                            android:text="حسن"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:typeface="normal" />
 
                     </LinearLayout>
 
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="5sp"
+                        android:layout_weight="1" />
+
                     <LinearLayout
-                        android:layout_width="52dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
@@ -1217,25 +2286,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView50"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
                                 android:id="@+id/textView51"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -1243,25 +2342,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView52"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView53"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -1269,60 +2398,115 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView54"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView55"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                     </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="168sp"
+                    android:layout_height="128sp"
                     android:layout_margin="10sp"
+                    android:background="?attr/popupMenuBackground"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView12"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="+1" />
+                            android:fontFamily="sans-serif-black"
+                            android:text="+1"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView8"
-                            android:layout_width="70sp"
+                            android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="حسن" />
+                            android:fontFamily="sans-serif-thin"
+                            android:text="حسن"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:typeface="normal" />
 
                     </LinearLayout>
 
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="5sp"
+                        android:layout_weight="1" />
+
                     <LinearLayout
-                        android:layout_width="52dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
@@ -1332,25 +2516,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView50"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
                                 android:id="@+id/textView51"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -1358,25 +2572,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView52"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView53"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -1384,60 +2628,115 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView54"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView55"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                     </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="168dp"
+                    android:layout_height="128dp"
                     android:layout_margin="10sp"
+                    android:background="?attr/popupMenuBackground"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView12"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="+1" />
+                            android:fontFamily="sans-serif-black"
+                            android:text="+1"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <Space
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
                         <TextView
                             android:id="@+id/textView8"
-                            android:layout_width="70sp"
+                            android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="حسن" />
+                            android:fontFamily="sans-serif-thin"
+                            android:text="حسن"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:typeface="normal" />
 
                     </LinearLayout>
 
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="5sp"
+                        android:layout_weight="1" />
+
                     <LinearLayout
-                        android:layout_width="52dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
@@ -1447,25 +2746,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView50"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
                                 android:id="@+id/textView51"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -1473,25 +2802,55 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView52"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView53"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -1499,28 +2858,59 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView54"
-                                android:layout_width="wrap_content"
+                            <Space
+                                android:layout_width="20sp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1" />
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView55"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
                                 android:layout_weight="1"
-                                android:text="1" />
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@android:color/holo_green_dark"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="20sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/textView51"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:backgroundTint="@color/material_dynamic_neutral50"
+                                android:fontFamily="sans-serif-black"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="10sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="کلمه" />
+                                android:fontFamily="sans-serif-black"
+                                android:text="کلمه"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                     </LinearLayout>
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -1536,6 +2926,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10sp"
+                android:background="?attr/popupMenuBackground"
                 android:orientation="vertical">
 
                 <TextView
@@ -1742,19 +3133,17 @@
 
             <ImageView
                 android:id="@+id/imageView13"
-                android:layout_width="171dp"
-                android:layout_height="96dp"
+                android:layout_width="67dp"
+                android:layout_height="47dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/next_turn"
-                tools:srcCompat="@drawable/game" />
+                app:srcCompat="@drawable/game" />
 
             <ImageView
                 android:id="@+id/imageView14"
-                android:layout_width="107dp"
-                android:layout_height="95dp"
+                android:layout_width="61dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@android:drawable/ic_menu_edit"
-                tools:srcCompat="@drawable/cup" />
+                app:srcCompat="@drawable/cup" />
         </LinearLayout>
 
     </LinearLayout>
