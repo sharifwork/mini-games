@@ -1,6 +1,5 @@
 package com.example.myapplication.controller;
 
-import com.example.myapplication.*;
 import com.example.myapplication.model.Row;
 import com.example.myapplication.model.Team;
 import com.example.myapplication.utlls.Result;
@@ -13,11 +12,11 @@ public class GameController {
     private Team team1 ;
     private Team team2 ;
     private boolean isTeam1Turn ;
-    private int roundTime;
+    private int time;
     private int roundNumber;
     private final int[] numCodes = new int[3];
 
-    GameController(){
+    public GameController(){
         team1 = new Team() ;
         team2 = new Team() ;
     }
@@ -30,12 +29,12 @@ public class GameController {
         return team2;
     }
 
-    public int getRoundTime() {
-        return roundTime;
+    public int getTime() {
+        return time;
     }
 
-    public void setRoundTime(int roundTime) {
-        this.roundTime = roundTime;
+    public void setTime(int time) {
+        this.time = time;
     }
 
     public void setRoundNumber(int roundNumber) {
@@ -59,16 +58,16 @@ public class GameController {
     public Result typeCodeInCell(int index , String code){
         if(index<0 || index>2)return new Result(false , "index is out of bound");
 
-        getTeamThisRound().getMyLastCell().getRows()[index].setCode(code);
+        getTeamThisRound().getMyLastCell().getRows()[index].setStringCode(code);
         return new Result(true , "your code has set successfully");
     }
 
-    private Team getTeamThisRound(){
+    public Team getTeamThisRound(){
         if(isTeam1Turn) return team1;
         else return team2;
     }
 
-    private Team getTeamNextRound(){
+    public Team getOpponent(){
         if(isTeam1Turn) return team2;
         else  return team1;
     }
@@ -79,16 +78,16 @@ public class GameController {
     }
 
     private void processAfterRound(){
-        if(isMatchGuessByAnswer(getTeamThisRound())) getTeamThisRound().getMyLastCell().setScore(0);
-        else getTeamThisRound().getMyLastCell().setScore(-1);
-        if(isMatchGuessByAnswer(getTeamNextRound())) getTeamNextRound().getEnemyLastCell().setScore(1);
-        else getTeamNextRound().getEnemyLastCell().setScore(0);
+        if(isMatchGuessWithAnswer(getTeamThisRound())) getTeamThisRound().getMyLastCell().setStringScore(0);
+        else getTeamThisRound().getMyLastCell().setStringScore(-1);
+        if(isMatchGuessWithAnswer(getOpponent())) getOpponent().getEnemyLastCell().setStringScore(1);
+        else getOpponent().getEnemyLastCell().setStringScore(0);
     }
 
-    private boolean isMatchGuessByAnswer(Team team){
+    private boolean isMatchGuessWithAnswer(Team team){
         Row[] rows = getTeamThisRound().getMyLastCell().getRows();
         for (int i = 0; i < rows.length; i++) {
-            if(rows[i].getGuess() != numCodes[i]) return false;
+            if(!rows[i].getNumGuess().getText().toString().equals(rows[i].getNumAnswer().getText().toString())) return false;
         }
         return true;
     }
@@ -98,7 +97,7 @@ public class GameController {
         if(index<0 || index>2) return new Result(false , "index is out of bound");
         if(number<1 || number>4) return new Result(false , "your numCodes is invalid");
 
-        getTeamThisRound().getMyLastCell().getRows()[index].setGuess(number);
+        getTeamThisRound().getMyLastCell().getRows()[index].setStringNumGuess(number);
         return new Result(true , "your numCodes has set successfully");
     }
 
@@ -106,7 +105,7 @@ public class GameController {
         if(index<0 || index>3) return new Result(false , "index is out of bound");
         if(!Util.isMatchStringWithRegex(guess ,"[A-Za-z ]+")) return new Result(false ,"your input is invalid");
 
-        getTeamThisRound().getColumns()[index].getCodes().add(guess);
+       // getTeamThisRound().getColumns()[index].getCodes().add(guess);
         return new Result(true, "word inserted successfully");
     }
 //

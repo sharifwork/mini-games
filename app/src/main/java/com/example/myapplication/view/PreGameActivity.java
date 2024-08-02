@@ -14,6 +14,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.myapplication.R;
+import com.example.myapplication.controller.GameController;
 import com.example.myapplication.controller.PregameController;
 import com.example.myapplication.utlls.AdderPlayer;
 
@@ -21,10 +22,12 @@ import java.util.ArrayList;
 
 public class PreGameActivity extends AppCompatActivity {
 
+
+    private GameController gameController = new GameController();
+    private PregameController controller = new PregameController(gameController);
     private EditText teamName;
     private EditText[] words;
     private ArrayList<AdderPlayer> addPlayersList;
-    private PregameController controller = new PregameController();
     private int time;
     private int round;
     private int endIndexAddPlayers = 0;
@@ -70,36 +73,39 @@ public class PreGameActivity extends AppCompatActivity {
 
     public void clickSubmit(View view) {
 
-        String teamName = this.teamName.getText().toString();
-        if(teamName.equals("")){
-            if(controller.isTeam1Turn()) teamName = "team1";
-            else teamName = "team2";
+        {
+            String name = this.teamName.getText().toString();
+            if (name.equals("")) {
+                if (controller.isTeam1Turn()) name = "team1";
+                else name = "team2";
+            }
+            teamName.setText(name);
+            controller.setTeamName(teamName);
         }
-        controller.setTeamName(teamName);
-
-        String[] words = new String[4];
-        for (int i = 0; i < words.length; i++) {
-            words[i] = this.words[i].getText().toString();
-            if (words[i].equals("")) {
-                Toast.makeText(this, "word is empty", Toast.LENGTH_SHORT).show();
+        {
+            String[] words = new String[4];
+            for (int i = 0; i < words.length; i++) {
+                words[i] = this.words[i].getText().toString();
+                if (words[i].equals("")) {
+                    Toast.makeText(this, "word is empty", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+            }
+            controller.setWord(this.words);
+        }
+        {
+            ArrayList<String> players = new ArrayList<>();
+            for (AdderPlayer adderPlayer : addPlayersList) {
+                String name = adderPlayer.getPlayerName().getText().toString();
+                if (!name.equals(""))
+                    players.add(name);
+            }
+            if (players.size() < 2) {
+                Toast.makeText(this, "number of players is less than 2", Toast.LENGTH_SHORT).show();
                 return;
             }
+            controller.setPlayersList(players);
         }
-        controller.setWord(words);
-
-        ArrayList<String> players = new ArrayList<>();
-        for (AdderPlayer adderPlayer : addPlayersList) {
-            String name = adderPlayer.getPlayerName().getText().toString();
-            if(!name.equals(""))
-                players.add(name);
-        }
-
-        if (players.size() < 2) {
-            Toast.makeText(this, "number of players is less than 2", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        controller.setPlayersList(players);
-
         if(controller.isTeam1Turn()){
             controller.setRoundNumber(round);
             controller.setTimeEveryRound(time);
@@ -110,6 +116,7 @@ public class PreGameActivity extends AppCompatActivity {
             ((ImageView)view).setImageResource(ImagesResource.RUN.getImg());
         }
         else{
+            GameActivity.setGameController(gameController);
             Intent intent = new Intent(PreGameActivity.this, GameActivity.class);
             startActivity(intent);
             controller.gameStart(intent);

@@ -1,42 +1,39 @@
 package com.example.myapplication.model;
 
+import android.widget.TextView;
+
 import java.util.ArrayList;
 
 public class Team {
-    private String name;
+    private TextView name;
     private ArrayList<String> players;
-    private ArrayList<Cell> cells;
+    private ArrayList<Cell> cells = new ArrayList<>();
     private ArrayList<Cell> enemyCells;
-    private String [] words = new String[4];
+    private TextView [] words = new TextView[4];
     private Column[] columns = new Column[4];
     private int score;
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public Team(){
+        cells.add(new Cell());
+        cells.add(new Cell());
+        cells.add(new Cell());
+        cells.add(new Cell());
+        cells.add(new Cell());
+        cells.add(new Cell());
 
-    public String getName() {
-        return name;
-    }
+        columns[0] = new Column();
+        columns[1] = new Column();
+        columns[2] = new Column();
+        columns[3] = new Column();
 
-    public ArrayList<String> getPlayers() {
-        return players;
+        enemyCells = new ArrayList<>();
     }
-
     public ArrayList<Cell> getCells() {
         return cells;
     }
 
     public ArrayList<Cell> getEnemyBoard() {
         return enemyCells;
-    }
-
-    public String[] getWords() {
-        return words;
-    }
-
-    public void setWords(String[] words){
-        this.words = words;
     }
 
     public Column[] getColumns() {
@@ -55,7 +52,47 @@ public class Team {
         return enemyCells.get(enemyCells.size()-1);
     }
 
+    public TextView getName() {
+        return name;
+    }
+
+    public void setName(TextView name) {
+        this.name = name;
+    }
+
+    public ArrayList<String> getPlayers() {
+        return players;
+    }
+
     public void setPlayers(ArrayList<String> players) {
         this.players = players;
+    }
+
+    public void setCells(ArrayList<Cell> cells) {
+        this.cells = cells;
+    }
+
+    public ArrayList<Cell> getEnemyCells() {
+        return enemyCells;
+    }
+
+    public void setEnemyCells(ArrayList<Cell> enemyCells) {
+        this.enemyCells = enemyCells;
+    }
+
+    public TextView[] getWords() {
+        return words;
+    }
+
+    public void setWords(TextView[] words) {
+        this.words = words;
+    }
+
+    public void setColumns(Column[] columns) {
+        this.columns = columns;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
     }
 }

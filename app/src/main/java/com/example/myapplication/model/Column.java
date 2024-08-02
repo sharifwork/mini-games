@@ -1,29 +1,35 @@
 package com.example.myapplication.model;
 
+import android.widget.TextView;
+
 import java.util.ArrayList;
 
 public class Column {
-    private String answer;
-    private ArrayList<String> codes;
-    private String guess;
+    private TextView answer;
+    private ArrayList<TextView> codes;
+    private TextView guess;
 
-    public String getAnswer() {
+    public TextView getAnswer() {
         return answer;
     }
 
-    public void setAnswer(String answer) {
-        this.answer = answer;
+    public void setStringAnswer(String answer) {
+        this.answer.setText(answer);
     }
 
-    public String getGuess() {
+    public ArrayList<TextView> getCodes() {
+        return codes;
+    }
+
+    public void setCodes(ArrayList<TextView> codes) {
+        this.codes = codes;
+    }
+
+    public TextView getGuess() {
         return guess;
     }
 
-    public void setGuess(String guess) {
+    public void setGuess(TextView guess) {
         this.guess = guess;
-    }
-
-    public ArrayList<String> getCodes() {
-        return codes;
     }
 }

@@ -1,31 +1,33 @@
 package com.example.myapplication.model;
 
-public class Row {
-    private String code;
-    private int guess;
-    private int answer;
+import android.widget.TextView;
 
-    public String getCode() {
+public class Row {
+    private TextView code ;
+    private TextView numGuess;
+    private TextView numAnswer;
+
+    public TextView getCode() {
         return code;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setStringCode(String code) {
+        this.code.setText(code);
     }
 
-    public int getGuess() {
-        return guess;
+    public TextView getNumGuess() {
+        return numGuess;
     }
 
-    public void setGuess(int guess) {
-        this.guess = guess;
+    public void setStringNumGuess(int numGuess) {
+        this.numGuess.setText("" + numGuess);
     }
 
-    public int getAnswer() {
-        return answer;
+    public TextView getNumAnswer() {
+        return numAnswer;
     }
 
-    public void setAnswer(int answer) {
-        this.answer = answer;
+    public void setNumAnswer(TextView numAnswer) {
+        this.numAnswer = numAnswer;
     }
 }

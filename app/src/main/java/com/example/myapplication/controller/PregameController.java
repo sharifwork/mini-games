@@ -1,24 +1,23 @@
 package com.example.myapplication.controller;
 
-import static androidx.core.content.ContextCompat.startActivity;
-
 import android.content.Intent;
+import android.widget.TextView;
 
 import com.example.myapplication.model.Team;
 import com.example.myapplication.utlls.Result;
-import com.example.myapplication.utlls.Util;
 
 import java.util.ArrayList;
 
 public class PregameController {
     private boolean isTeam1Turn;
-    private GameController gameController = new GameController();
+    private GameController gameController;
 
-    public PregameController(){
+    public PregameController(GameController gameController){
+        this.gameController = gameController;
         isTeam1Turn = true;
     }
 
-    public void setTeamName(String name){
+    public void setTeamName(TextView name){
         getTeamThisTurn().setName(name);
     }
 
@@ -35,7 +34,7 @@ public class PregameController {
         else return gameController.getTeam2();
     }
 
-    public Result setWord(String[] words){
+    public Result setWord(TextView[] words){
        // if(index <0 || index >3 ) return new Result(false , "index is out of bound!");
 
         getTeamThisTurn().setWords(words);
@@ -45,7 +44,7 @@ public class PregameController {
     public Result setTimeEveryRound(int time){
         if(time < 0) return new Result(false , "time can not be less than 0 !");
 
-        gameController.setRoundTime(time);
+        gameController.setTime(time);
         return new Result(true, "time of each round set successfully");
     }
 
@@ -67,13 +66,13 @@ public class PregameController {
         return new Result(true , "game start");
     }
 
-    public Result removePlayer(int index){
-        ArrayList<String> players = getTeamThisTurn().getPlayers();
-        if(index <0 || index>players.size()-1) return new Result(false , "index is out of bound!");
-
-        players.remove(index);
-        return new Result(true , "player from players removed successfully");
-    }
+//    public Result removePlayer(int index){
+//        ArrayList<TextView> players = getTeamThisTurn().getPlayers();
+//        if(index <0 || index>players.size()-1) return new Result(false , "index is out of bound!");
+//
+//        players.remove(index);
+//        return new Result(true , "player from players removed successfully");
+//    }
 
     public void setTeam1Turn(boolean team1Turn) {
         isTeam1Turn = team1Turn;

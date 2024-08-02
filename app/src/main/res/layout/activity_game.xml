@@ -29,7 +29,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/team2"
+                android:id="@+id/timer"
                 android:layout_width="30dp"
                 android:layout_height="25dp"
                 android:layout_margin="5sp"
@@ -53,7 +53,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/team2"
+                    android:id="@+id/roundCount"
                     android:layout_width="20dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -64,7 +64,6 @@
                     android:textColor="#FFFFFF" />
 
                 <TextView
-                    android:id="@+id/team2"
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -86,18 +85,16 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/team2"
+                    android:id="@+id/scoreTeam"
                     android:layout_width="5dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".5"
                     android:fontFamily="sans-serif-black"
-                    android:gravity="center"
                     android:text="+1"
-                    android:textAlignment="textEnd"
+                    android:textAlignment="viewEnd"
                     android:textColor="#FFFFFF" />
 
                 <TextView
-                    android:id="@+id/team2"
                     android:layout_width="20dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -109,7 +106,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/team2"
+                android:id="@+id/teamnameTitle"
                 android:layout_width="50dp"
                 android:layout_height="25dp"
                 android:layout_margin="5sp"
@@ -139,7 +136,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView56"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-black"
@@ -148,7 +144,7 @@
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/textView57"
+                    android:id="@+id/word1Title"
                     android:layout_width="75sp"
                     android:layout_height="35sp"
                     android:background="@drawable/field_text"
@@ -170,7 +166,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView56"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-black"
@@ -179,7 +174,7 @@
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/textView57"
+                    android:id="@+id/word2Title"
                     android:layout_width="75sp"
                     android:layout_height="35sp"
                     android:background="@drawable/field_text"
@@ -200,7 +195,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView56"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-black"
@@ -209,7 +203,7 @@
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/textView57"
+                    android:id="@+id/word3Title"
                     android:layout_width="75sp"
                     android:layout_height="35sp"
                     android:background="@drawable/field_text"
@@ -230,7 +224,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView56"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-black"
@@ -239,7 +232,7 @@
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/textView57"
+                    android:id="@+id/word4Title"
                     android:layout_width="75sp"
                     android:layout_height="35sp"
                     android:background="@drawable/field_text"
@@ -260,7 +253,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
             android:background="@android:drawable/gallery_thumb"
-            android:backgroundTint="@color/design_default_color_secondary_variant">
+            android:backgroundTint="@color/design_default_color_secondary_variant"
+            android:layoutDirection="rtl">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -274,6 +268,7 @@
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
                     android:background="?attr/popupMenuBackground"
+                    android:layoutDirection="locale"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -289,11 +284,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
+                            android:tag="1031"
                             android:text="+1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -304,11 +299,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView8"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-thin"
+                            android:tag="1030"
                             android:text="حسن"
                             android:textAlignment="center"
                             android:textSize="18sp"
@@ -338,13 +333,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1002"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -356,13 +351,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1001"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -378,6 +373,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1000"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -394,13 +390,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1012"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -412,13 +408,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1011"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -434,6 +430,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1010"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -450,13 +447,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1022"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -468,13 +465,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1021"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -490,6 +487,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1020"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -504,6 +502,7 @@
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
                     android:background="?attr/popupMenuBackground"
+                    android:layoutDirection="locale"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -519,11 +518,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
+                            android:tag="1131"
                             android:text="+1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -534,11 +533,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView8"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-thin"
+                            android:tag="1130"
                             android:text="حسن"
                             android:textAlignment="center"
                             android:textSize="18sp"
@@ -568,13 +567,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1102"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -586,13 +585,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1101"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -608,6 +607,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1100"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -624,13 +624,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1112"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -642,13 +642,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1111"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -664,6 +664,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1110"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -680,13 +681,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1122"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -698,13 +699,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1121"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -720,6 +721,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1120"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -734,6 +736,7 @@
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
                     android:background="?attr/popupMenuBackground"
+                    android:layoutDirection="locale"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -749,11 +752,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
+                            android:tag="1231"
                             android:text="+1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -764,11 +767,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView8"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-thin"
+                            android:tag="1230"
                             android:text="حسن"
                             android:textAlignment="center"
                             android:textSize="18sp"
@@ -798,13 +801,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1202"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -816,13 +819,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1201"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -838,6 +841,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1200"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -854,13 +858,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1212"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -872,13 +876,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1211"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -894,6 +898,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1210"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -910,13 +915,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1222"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -928,13 +933,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1221"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -950,6 +955,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1220"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -964,6 +970,7 @@
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
                     android:background="?attr/popupMenuBackground"
+                    android:layoutDirection="locale"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -979,11 +986,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
+                            android:tag="1331"
                             android:text="+1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -994,11 +1001,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView8"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-thin"
+                            android:tag="1330"
                             android:text="حسن"
                             android:textAlignment="center"
                             android:textSize="18sp"
@@ -1028,13 +1035,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1302"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1046,13 +1053,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1301"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1068,6 +1075,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1300"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -1084,13 +1092,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1312"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1102,13 +1110,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1311"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1124,6 +1132,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1310"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -1140,13 +1149,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1322"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1158,13 +1167,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1321"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1180,6 +1189,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1320"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -1194,6 +1204,7 @@
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
                     android:background="?attr/popupMenuBackground"
+                    android:layoutDirection="locale"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -1209,11 +1220,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
+                            android:tag="1431"
                             android:text="+1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -1224,11 +1235,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView8"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-thin"
+                            android:tag="1430"
                             android:text="حسن"
                             android:textAlignment="center"
                             android:textSize="18sp"
@@ -1258,13 +1269,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1402"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1276,13 +1287,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1401"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1298,6 +1309,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1400"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -1314,13 +1326,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1412"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1332,13 +1344,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1411"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1354,6 +1366,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1410"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -1370,13 +1383,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1422"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1388,13 +1401,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1421"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1410,6 +1423,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1420"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -1424,6 +1438,7 @@
                     android:layout_height="128dp"
                     android:layout_margin="10sp"
                     android:background="?attr/popupMenuBackground"
+                    android:layoutDirection="locale"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -1439,14 +1454,14 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
                             android:text="+1"
                             android:textAlignment="center"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"
+                            android:tag="1531"/>
 
                         <Space
                             android:layout_width="20sp"
@@ -1454,7 +1469,6 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView8"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -1462,7 +1476,8 @@
                             android:text="حسن"
                             android:textAlignment="center"
                             android:textSize="18sp"
-                            android:typeface="normal" />
+                            android:typeface="normal"
+                            android:tag="1530"/>
 
                     </LinearLayout>
 
@@ -1488,7 +1503,6 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1498,7 +1512,9 @@
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"
+                                android:tag="1502"
+                                />
 
                             <Space
                                 android:layout_width="20sp"
@@ -1506,7 +1522,6 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1516,7 +1531,9 @@
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"
+                                android:tag="1501"
+                                />
 
                             <Space
                                 android:layout_width="10sp"
@@ -1530,7 +1547,8 @@
                                 android:fontFamily="sans-serif-black"
                                 android:text="کلمه"
                                 android:textAlignment="center"
-                                android:textSize="20sp" />
+                                android:textSize="20sp"
+                                android:tag="1500" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -1544,7 +1562,6 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1554,7 +1571,8 @@
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"
+                                android:tag="1512"/>
 
                             <Space
                                 android:layout_width="20sp"
@@ -1562,7 +1580,6 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1572,7 +1589,8 @@
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"
+                                android:tag="1511"/>
 
                             <Space
                                 android:layout_width="10sp"
@@ -1586,7 +1604,8 @@
                                 android:fontFamily="sans-serif-black"
                                 android:text="کلمه"
                                 android:textAlignment="center"
-                                android:textSize="20sp" />
+                                android:textSize="20sp"
+                                android:tag="1510"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -1600,7 +1619,6 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1610,7 +1628,8 @@
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"
+                                android:tag="1522"/>
 
                             <Space
                                 android:layout_width="20sp"
@@ -1618,7 +1637,6 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1628,7 +1646,8 @@
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"
+                                android:tag="1521"/>
 
                             <Space
                                 android:layout_width="10sp"
@@ -1642,7 +1661,8 @@
                                 android:fontFamily="sans-serif-black"
                                 android:text="کلمه"
                                 android:textAlignment="center"
-                                android:textSize="20sp" />
+                                android:textSize="20sp"
+                                android:tag="1520"/>
                         </LinearLayout>
 
                     </LinearLayout>
@@ -1655,16 +1675,16 @@
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10sp"
-            android:layout_marginVertical="10sp"
+            android:layout_margin="10sp"
             android:background="@android:drawable/gallery_thumb"
-            android:backgroundTint="?attr/colorError">
+            android:backgroundTint="@color/design_default_color_error"
+            android:layoutDirection="rtl">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="?android:attr/autofilledHighlight"
-                android:backgroundTint="@color/design_default_color_error"
+                android:backgroundTint="@android:color/holo_red_dark"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -1672,6 +1692,7 @@
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
                     android:background="?attr/popupMenuBackground"
+                    android:layoutDirection="locale"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -1687,11 +1708,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
+                            android:tag="2031"
                             android:text="+1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -1702,11 +1723,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView8"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-thin"
+                            android:tag="2030"
                             android:text="حسن"
                             android:textAlignment="center"
                             android:textSize="18sp"
@@ -1736,13 +1757,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2002"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1754,13 +1775,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2001"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1776,6 +1797,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2000"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -1792,13 +1814,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2012"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1810,13 +1832,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2011"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1832,6 +1854,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2010"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -1848,13 +1871,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2022"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1866,13 +1889,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2021"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1888,6 +1911,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2020"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -1902,6 +1926,7 @@
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
                     android:background="?attr/popupMenuBackground"
+                    android:layoutDirection="locale"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -1917,11 +1942,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
+                            android:tag="2131"
                             android:text="+1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -1932,11 +1957,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView8"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-thin"
+                            android:tag="2130"
                             android:text="حسن"
                             android:textAlignment="center"
                             android:textSize="18sp"
@@ -1966,13 +1991,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2102"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1984,13 +2009,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2101"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2006,6 +2031,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2100"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2022,13 +2048,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2112"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2040,13 +2066,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2111"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2062,6 +2088,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2110"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2078,13 +2105,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2122"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2096,13 +2123,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2121"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2118,6 +2145,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2120"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2132,6 +2160,7 @@
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
                     android:background="?attr/popupMenuBackground"
+                    android:layoutDirection="locale"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -2147,11 +2176,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
+                            android:tag="2231"
                             android:text="+1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -2162,11 +2191,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView8"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-thin"
+                            android:tag="2230"
                             android:text="حسن"
                             android:textAlignment="center"
                             android:textSize="18sp"
@@ -2196,13 +2225,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2202"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2214,13 +2243,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2201"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2236,6 +2265,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2200"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2252,13 +2282,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2212"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2270,13 +2300,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2211"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2292,6 +2322,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2210"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2308,13 +2339,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2222"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2326,13 +2357,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2221"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2348,6 +2379,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2220"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2362,6 +2394,7 @@
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
                     android:background="?attr/popupMenuBackground"
+                    android:layoutDirection="locale"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -2377,11 +2410,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
+                            android:tag="2331"
                             android:text="+1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -2392,11 +2425,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView8"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-thin"
+                            android:tag="2330"
                             android:text="حسن"
                             android:textAlignment="center"
                             android:textSize="18sp"
@@ -2426,13 +2459,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2302"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2444,13 +2477,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2301"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2466,6 +2499,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2300"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2482,13 +2516,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2312"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2500,13 +2534,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2311"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2522,6 +2556,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2310"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2538,13 +2573,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2322"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2556,13 +2591,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2321"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2578,6 +2613,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2320"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2592,6 +2628,7 @@
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
                     android:background="?attr/popupMenuBackground"
+                    android:layoutDirection="locale"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -2607,11 +2644,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
+                            android:tag="2431"
                             android:text="+1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -2622,11 +2659,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView8"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-thin"
+                            android:tag="1430"
                             android:text="حسن"
                             android:textAlignment="center"
                             android:textSize="18sp"
@@ -2656,13 +2693,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2402"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2674,13 +2711,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2401"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2696,6 +2733,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2400"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2712,13 +2750,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2412"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2730,13 +2768,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2411"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2752,6 +2790,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1410"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2768,13 +2807,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2422"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2786,13 +2825,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2421"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2808,6 +2847,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2420"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2822,6 +2862,7 @@
                     android:layout_height="128dp"
                     android:layout_margin="10sp"
                     android:background="?attr/popupMenuBackground"
+                    android:layoutDirection="locale"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -2837,11 +2878,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
+                            android:tag="2531"
                             android:text="+1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -2852,11 +2893,11 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/textView8"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-thin"
+                            android:tag="2530"
                             android:text="حسن"
                             android:textAlignment="center"
                             android:textSize="18sp"
@@ -2886,13 +2927,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2502"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2904,13 +2945,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2501"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2926,6 +2967,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2500"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2942,13 +2984,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2512"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2960,13 +3002,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2511"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2982,6 +3024,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2510"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2998,13 +3041,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2522"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -3016,13 +3059,13 @@
                                 android:layout_weight="1" />
 
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2521"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -3038,6 +3081,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="2520"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -3051,7 +3095,7 @@
         </HorizontalScrollView>
 
         <LinearLayout
-            android:layout_width="381dp"
+            android:layout_width="399dp"
             android:layout_height="274dp"
             android:gravity="center"
             android:orientation="horizontal">
@@ -3059,12 +3103,11 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="5sp"
+                android:layout_marginHorizontal="10sp"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView5"
                     android:layout_width="40sp"
                     android:layout_height="40sp"
                     android:layout_margin="0sp"
@@ -3091,7 +3134,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="300"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3100,7 +3144,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="301"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3109,7 +3154,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="302"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3118,7 +3164,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="303"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3127,7 +3174,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="304"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3136,7 +3184,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="305"/>
 
                 </LinearLayout>
 
@@ -3149,7 +3198,8 @@
                     android:gravity="center"
                     android:text="کلمه"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:tag="306"/>
 
                 <TextView
                     android:layout_width="80sp"
@@ -3161,18 +3211,18 @@
                     android:text="کلمه"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:visibility="visible" />
+                    android:visibility="visible"
+                    android:tag="307"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="5sp"
+                android:layout_marginHorizontal="10sp"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView5"
                     android:layout_width="40sp"
                     android:layout_height="40sp"
                     android:layout_margin="0sp"
@@ -3199,7 +3249,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="310"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3208,7 +3259,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="311"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3217,7 +3269,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="312"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3226,7 +3279,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="313"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3235,7 +3289,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="314"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3244,7 +3299,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="315"/>
 
                 </LinearLayout>
 
@@ -3257,7 +3313,8 @@
                     android:gravity="center"
                     android:text="کلمه"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:tag="316"/>
 
                 <TextView
                     android:layout_width="80sp"
@@ -3269,18 +3326,18 @@
                     android:text="کلمه"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:visibility="visible" />
+                    android:visibility="visible"
+                    android:tag="317"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="5sp"
+                android:layout_marginHorizontal="10sp"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView5"
                     android:layout_width="40sp"
                     android:layout_height="40sp"
                     android:layout_margin="0sp"
@@ -3307,7 +3364,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="320"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3316,7 +3374,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="321"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3325,7 +3384,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="322"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3334,7 +3394,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="323"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3343,7 +3404,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="324"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3352,7 +3414,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="325"/>
 
                 </LinearLayout>
 
@@ -3365,7 +3428,8 @@
                     android:gravity="center"
                     android:text="کلمه"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:tag="326"/>
 
                 <TextView
                     android:layout_width="80sp"
@@ -3377,18 +3441,18 @@
                     android:text="کلمه"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:visibility="visible" />
+                    android:visibility="visible"
+                    android:tag="327"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5sp"
+                android:layout_marginHorizontal="10sp"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView5"
                     android:layout_width="40sp"
                     android:layout_height="40sp"
                     android:layout_margin="0sp"
@@ -3415,7 +3479,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="330"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3424,7 +3489,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="331"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3433,7 +3499,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="332"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3442,7 +3509,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="333"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3451,7 +3519,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="334"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -3460,7 +3529,8 @@
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tag="335"/>
 
                 </LinearLayout>
 
@@ -3473,7 +3543,8 @@
                     android:gravity="center"
                     android:text="کلمه"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:tag="336"/>
 
                 <TextView
                     android:layout_width="80sp"
@@ -3485,7 +3556,8 @@
                     android:text="کلمه"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:visibility="visible" />
+                    android:visibility="visible"
+                    android:tag="337"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -3497,14 +3569,13 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView13"
+                android:id="@+id/playButton"
                 android:layout_width="67dp"
                 android:layout_height="47dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/game" />
 
             <ImageView
-                android:id="@+id/imageView14"
                 android:layout_width="61dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

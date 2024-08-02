@@ -1,19 +1,22 @@
 package com.example.myapplication.model;
 
+import android.widget.TextView;
+
 public class Cell {
-    private final String author;
+    private TextView author;
     private final Row[] rows = new Row[3];
-    private int score;
+    private TextView score;
 
-    public Cell(String author) {
-        this.author = author;
+    public Cell(){
+        rows[0] = new Row();
+        rows[1] = new Row();
+        rows[2] = new Row();
+    }
+    public void setStringScore(int score) {
+        this.score.setText(""+score);
     }
 
-    public void setScore(int score) {
-        this.score = score;
-    }
-
-    public String getAuthor() {
+    public TextView getAuthor() {
         return author;
     }
 
@@ -21,7 +24,7 @@ public class Cell {
         return rows;
     }
 
-    public int getScore() {
+    public TextView getScore() {
         return score;
     }
 }
