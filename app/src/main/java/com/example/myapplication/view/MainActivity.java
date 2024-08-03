@@ -3,9 +3,14 @@ package com.example.myapplication.view;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.Toast;
+import android.app.Dialog;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -42,8 +47,19 @@ private TextView textView;
     }
 
     public void clickButtonHistoryGame(View view){
-        Intent intent = new Intent(MainActivity.this, DoozActivity.class);
-        startActivity(intent);
+
+        showEditDialog();
+//        Intent intent = new Intent(MainActivity.this, DoozActivity.class);
+//        startActivity(intent);
+    }
+
+    private void showEditDialog() {
+        // ایجاد دیالوگ
+        final Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.activity_pupup);
+        dialog.setTitle("Edit Text");
+
+        dialog.show(); // نمایش دیالوگ
     }
 
 
