@@ -1,15 +1,12 @@
 package com.example.myapplication.view;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.PopupMenu;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.app.Dialog;
 
 import androidx.activity.EdgeToEdge;
@@ -18,13 +15,14 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.myapplication.DoozActivity;
 import com.example.myapplication.R;
 
 public class MainActivity extends AppCompatActivity {
 
 private EditText editText;
 private TextView textView;
+private  Dialog dialogWriter;
+private Dialog dialogShow;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +35,13 @@ private TextView textView;
             return insets;
         });
 
+        dialogShow = new Dialog(this);
+        dialogShow.setContentView(R.layout.show_pupup);
+        dialogShow.setTitle("سلام حسن");
 
+        dialogWriter = new Dialog(this);
+        dialogWriter.setContentView(R.layout.write_pupup);
+        dialogWriter.setTitle("سلام حسن");
 
     }
 
@@ -54,13 +58,24 @@ private TextView textView;
     }
 
     private void showEditDialog() {
-        // ایجاد دیالوگ
-        final Dialog dialog = new Dialog(this);
-        dialog.setContentView(R.layout.activity_pupup);
-        dialog.setTitle("Edit Text");
-
-        dialog.show(); // نمایش دیالوگ
+        showCustomDialog();
     }
 
+    private void showCustomDialog() {
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this, R.style.CustomDialog);
+        dialogBuilder.setView(R.layout.show_pupup);
+        AlertDialog dialog = dialogBuilder.create();
+        dialog.getWindow().setBackgroundDrawableResource(R.drawable.shape);
+        dialog.show();
+    }
+
+    public void clickReturnButton(View view){
+        dialogWriter.dismiss();
+    }
+
+    public void clickButtonPlayPupup(View view){
+        dialogShow.dismiss();
+        dialogWriter.show();
+    }
 
 }

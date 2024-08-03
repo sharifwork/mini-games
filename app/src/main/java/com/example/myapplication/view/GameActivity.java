@@ -36,7 +36,7 @@ public class GameActivity extends AppCompatActivity {
         controller.gameSetup();
         initializeView();
       //  controller.getTeamThisRound().getCells().get(1).getRows()[2].setStringCode("اینجام");
-        controller.getTeamThisRound().getColumns()[3].setStringAnswer("ایول");
+      //  controller.getTeamThisRound().getColumns()[3].setStringAnswer("ایول");
     }
 
     public void initializeView(){
@@ -45,6 +45,7 @@ public class GameActivity extends AppCompatActivity {
         ((TextView)findViewById(R.id.word2Title)).setText(controller.getTeamThisRound().getWords()[1].getText().toString());
         ((TextView)findViewById(R.id.word3Title)).setText(controller.getTeamThisRound().getWords()[2].getText().toString());
         ((TextView)findViewById(R.id.word4Title)).setText(controller.getTeamThisRound().getWords()[3].getText().toString());
+
         for (int i = 0; i <((ConstraintLayout)findViewById(R.id.game)).getChildCount() ; i++) {
 
             View view = ((ConstraintLayout)findViewById(R.id.game)).getChildAt(i) ;
@@ -57,7 +58,6 @@ public class GameActivity extends AppCompatActivity {
                 else {
                     Log.d("hassan" , tag);
                 }
-
             }
         }
     }
@@ -70,11 +70,11 @@ public class GameActivity extends AppCompatActivity {
                 return getViewInCellsByTag(controller.getTeamThisRound().getEnemyCells(), tag);
             case '3':
                 if(tag.charAt(2)=='6')
-                    return controller.getTeamThisRound().getColumns()[(int)tag.charAt(1)].getGuess();
+                    return controller.getTeamThisRound().getColumns()[tag.charAt(1)-'0'].getGuess();
                 if(tag.charAt(2)=='7')
-                    return controller.getTeamThisRound().getColumns()[(int)tag.charAt(1)].getAnswer();
+                    return controller.getTeamThisRound().getColumns()[tag.charAt(1)-'0'].getAnswer();
 
-                return controller.getTeamThisRound().getColumns()[(int)tag.charAt(1)].getCodes().get((int)tag.charAt(2));
+                return controller.getTeamThisRound().getColumns()[tag.charAt(1)-'0'].getCodes().get(tag.charAt(2)-'0');
         }
         return null;
     }
@@ -82,20 +82,21 @@ public class GameActivity extends AppCompatActivity {
     private View getViewInCellsByTag(ArrayList<Cell> cells,String tag){
         if(tag.charAt(2)=='3'){
             if(tag.charAt(3)=='0')
-                return cells.get((int)tag.charAt(1)).getAuthor();
+                return cells.get(tag.charAt(1)-'0').getAuthor();
             if(tag.charAt(3)=='1')
-                return cells.get((int)tag.charAt(1)).getScore();
+                return cells.get(tag.charAt(1)-'0').getScore();
         }
         if(tag.charAt(3)=='0')
-            return cells.get((int)tag.charAt(1)).getRows()[(int)tag.charAt(2)].getCode();
+            return cells.get(tag.charAt(1)-'0').getRows()[tag.charAt(2)-'0'].getCode();
         if(tag.charAt(3)=='1')
-            return cells.get((int)tag.charAt(1)).getRows()[(int)tag.charAt(2)].getNumGuess();
+            return cells.get(tag.charAt(1)-'0').getRows()[tag.charAt(2)-'0'].getNumGuess();
         if(tag.charAt(3)=='2')
-            return cells.get((int)tag.charAt(1)).getRows()[(int)tag.charAt(2)].getNumAnswer();
+            return cells.get(tag.charAt(1)-'0').getRows()[tag.charAt(2)-'0'].getNumAnswer();
         return null;
     }
 
     public static void setGameController(GameController gameController) {
         GameActivity.controller = gameController;
     }
+
 }

@@ -35,7 +35,7 @@ public class PregameController {
     }
 
     public Result setWord(TextView[] words){
-       // if(index <0 || index >3 ) return new Result(false , "index is out of bound!");
+       // if(index <0 || index >3 ) return new Result(false , "index is out of bound!");*
 
         getTeamThisTurn().setWords(words);
         return new Result(true , "set word successfully");

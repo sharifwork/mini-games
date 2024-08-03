@@ -12,12 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiniGames"
         tools:targetApi="31">
-        <activity
-            android:name=".view.PupupActivity"
-            android:exported="false" />
+
         <activity
             android:name=".view.GameActivity"
-            android:exported="false" />
+            android:exported="false"
+            />
         <activity
             android:name=".view.PreGameActivity"
             android:exported="false" />

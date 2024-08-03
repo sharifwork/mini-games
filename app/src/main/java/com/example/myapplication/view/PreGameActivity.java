@@ -69,6 +69,8 @@ public class PreGameActivity extends AppCompatActivity {
         addPlayersList.add(new AdderPlayer(findViewById(R.id.addPlayer3), findViewById(R.id.player3) , findViewById(R.id.num3))) ;
         addPlayersList.add(new AdderPlayer(findViewById(R.id.addPlayer4), findViewById(R.id.player4) , findViewById(R.id.num4))) ;
 
+
+
     }
 
     public void clickSubmit(View view) {

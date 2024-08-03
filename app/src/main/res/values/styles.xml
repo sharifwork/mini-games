@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="CustomDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:background">@drawable/shape</item> <!-- تصویر شکل سفارشی -->
+        <item name="android:windowMinWidthMajor">80%</item> <!-- حداقل عرض دیالوگ -->
+        <item name="android:windowMinWidthMinor">80%</item>
+    </style>
+
+</resources>
