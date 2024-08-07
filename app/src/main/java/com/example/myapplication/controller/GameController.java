@@ -1,6 +1,8 @@
 package com.example.myapplication.controller;
 
+import com.example.myapplication.model.Cell;
 import com.example.myapplication.model.Row;
+import com.example.myapplication.model.Status;
 import com.example.myapplication.model.Team;
 import com.example.myapplication.utlls.Result;
 import com.example.myapplication.utlls.Util;
@@ -15,6 +17,7 @@ public class GameController {
     private int time;
     private int roundNumber;
     private final int[] numCodes = new int[3];
+    private Team loggedTeam ;
 
     public GameController(){
         team1 = new Team() ;
@@ -46,8 +49,34 @@ public class GameController {
     }
 
     public Result gameSetup (){
+
+        //add cells
+        for (int i = 0; i < 2; i++) {
+            Team team;
+            if(i == 0) team = team1;
+            else team = team2;
+            for (int j = 0; j < roundNumber; j++) {
+                    team.getCells().add(new Cell());
+                    team.getEnemyCells().add(new Cell());
+            }
+        }
+
         assigningRandomTurn();
+
+        loggedTeam = getTeamThisRound();
+
+        getTeamThisRound().setStatus(Team.Status.WRITE);
+        getTeamNextRound2().setStatus(Team.Status.WAIT);
+
         return new Result(true , "setup done");
+    }
+
+    public Team getLoggedTeam() {
+        return loggedTeam;
+    }
+
+    public void setLoggedTeam(Team loggedTeam) {
+        this.loggedTeam = loggedTeam;
     }
 
     private void assigningRandomTurn(){
@@ -65,6 +94,11 @@ public class GameController {
     public Team getTeamThisRound(){
         if(isTeam1Turn) return team1;
         else return team2;
+    }
+
+    public Team getTeamNextRound2(){
+        if(isTeam1Turn) return team2;
+        else return team1;
     }
 
     public Team getOpponent(){

@@ -264,6 +264,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
+                    android:id="@+id/cell_0"
                     android:layout_width="168sp"
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
@@ -509,6 +510,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/cell_1"
                     android:layout_width="168sp"
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
@@ -755,6 +757,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/cell_2"
                     android:layout_width="168sp"
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
@@ -1000,6 +1003,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/cell_3"
                     android:layout_width="168sp"
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
@@ -1245,6 +1249,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/cell_4"
                     android:layout_width="168sp"
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
@@ -1490,6 +1495,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/cell_5"
                     android:layout_width="168dp"
                     android:layout_height="128dp"
                     android:layout_margin="10sp"
@@ -1515,10 +1521,10 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
+                            android:tag="1531"
                             android:text="+1"
                             android:textAlignment="center"
-                            android:textSize="16sp"
-                            android:tag="1531"/>
+                            android:textSize="16sp" />
 
                         <Space
                             android:layout_width="20sp"
@@ -1531,11 +1537,11 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-thin"
+                            android:tag="1530"
                             android:text="حسن"
                             android:textAlignment="center"
                             android:textSize="18sp"
-                            android:typeface="normal"
-                            android:tag="1530"/>
+                            android:typeface="normal" />
 
                     </LinearLayout>
 
@@ -1568,12 +1574,11 @@
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1502"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
-                                android:textStyle="bold"
-                                android:tag="1502"
-                                />
+                                android:textStyle="bold" />
 
                             <Space
                                 android:layout_width="20sp"
@@ -1588,12 +1593,11 @@
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1501"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
-                                android:textStyle="bold"
-                                android:tag="1501"
-                                />
+                                android:textStyle="bold" />
 
                             <Space
                                 android:layout_width="10sp"
@@ -1606,10 +1610,10 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1500"
                                 android:text="کلمه"
                                 android:textAlignment="center"
-                                android:textSize="20sp"
-                                android:tag="1500" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -1630,11 +1634,11 @@
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1512"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
-                                android:textStyle="bold"
-                                android:tag="1512"/>
+                                android:textStyle="bold" />
 
                             <Space
                                 android:layout_width="20sp"
@@ -1649,11 +1653,11 @@
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1511"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
-                                android:textStyle="bold"
-                                android:tag="1511"/>
+                                android:textStyle="bold" />
 
                             <Space
                                 android:layout_width="10sp"
@@ -1666,10 +1670,10 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1510"
                                 android:text="کلمه"
                                 android:textAlignment="center"
-                                android:textSize="20sp"
-                                android:tag="1510"/>
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -1691,11 +1695,11 @@
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1522"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
-                                android:textStyle="bold"
-                                android:tag="1522"/>
+                                android:textStyle="bold" />
 
                             <Space
                                 android:layout_width="20sp"
@@ -1711,11 +1715,11 @@
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1521"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
-                                android:textStyle="bold"
-                                android:tag="1521"/>
+                                android:textStyle="bold" />
 
                             <Space
                                 android:layout_width="10sp"
@@ -1728,10 +1732,10 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
+                                android:tag="1520"
                                 android:text="کلمه"
                                 android:textAlignment="center"
-                                android:textSize="20sp"
-                                android:tag="1520"/>
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -1757,6 +1761,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
+                    android:id="@+id/enemyCell_0"
                     android:layout_width="168sp"
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
@@ -2002,6 +2007,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/enemyCell_1"
                     android:layout_width="168sp"
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
@@ -2248,6 +2254,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/enemyCell_2"
                     android:layout_width="168sp"
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
@@ -2493,6 +2500,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/enemyCell_3"
                     android:layout_width="168sp"
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
@@ -2738,6 +2746,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/enemyCell_4"
                     android:layout_width="168sp"
                     android:layout_height="128sp"
                     android:layout_margin="10sp"
@@ -2983,6 +2992,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/enemyCell_5"
                     android:layout_width="168dp"
                     android:layout_height="128dp"
                     android:layout_margin="10sp"

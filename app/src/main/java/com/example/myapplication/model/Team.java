@@ -12,21 +12,9 @@ public class Team {
     private TextView [] words = new TextView[4];
     private Column[] columns = new Column[4];
     private int score;
+    private Status status;
 
     public Team(){
-        cells.add(new Cell());
-        cells.add(new Cell());
-        cells.add(new Cell());
-        cells.add(new Cell());
-        cells.add(new Cell());
-        cells.add(new Cell());
-
-        enemyCells.add(new Cell());
-        enemyCells.add(new Cell());
-        enemyCells.add(new Cell());
-        enemyCells.add(new Cell());
-        enemyCells.add(new Cell());
-        enemyCells.add(new Cell());
 
         columns[0] = new Column();
         columns[1] = new Column();
@@ -44,14 +32,6 @@ public class Team {
 
     public int getScore() {
         return score;
-    }
-
-    public Cell getMyLastCell(){
-        return cells.get(cells.size()-1);
-    }
-
-    public Cell getEnemyLastCell(){
-        return enemyCells.get(enemyCells.size()-1);
     }
 
     public TextView getName() {
@@ -97,4 +77,21 @@ public class Team {
     public void setScore(int score) {
         this.score = score;
     }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+    public enum Status{
+        WAIT
+        ,WRITE
+        ,GUESS
+        ,FINISH;
+    }
 }
+
+

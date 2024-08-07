@@ -47,7 +47,7 @@
         app:srcCompat="@drawable/blank" />
 
     <ImageView
-        android:id="@+id/cell1"
+        android:id="@+id/cell2"
         android:layout_width="133dp"
         android:layout_height="134dp"
         android:onClick="clickOnCell"

@@ -3,6 +3,7 @@ package com.example.myapplication.view;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -23,6 +24,8 @@ import java.util.ArrayList;
 public class GameActivity extends AppCompatActivity {
 
     private static GameController controller;
+    private ArrayList<LinearLayout> myCell ;
+    private ArrayList<LinearLayout> enemyCell;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +76,22 @@ public class GameActivity extends AppCompatActivity {
         ((TextView)findViewById(R.id.word2Title)).setText(controller.getTeamThisRound().getWords()[1].getText().toString());
         ((TextView)findViewById(R.id.word3Title)).setText(controller.getTeamThisRound().getWords()[2].getText().toString());
         ((TextView)findViewById(R.id.word4Title)).setText(controller.getTeamThisRound().getWords()[3].getText().toString());
+
+        for (int i = 0; i < 6; i++) {
+            ArrayList<LinearLayout> cells ;
+            for (int j = 0; j < 2 ; j++) {
+
+                if(i==0){
+                    int resID = getResources().getIdentifier("cell_" + i , "id", getPackageName());
+                    myCell.add(findViewById(resID));
+                }
+                else {
+                    int resID = getResources().getIdentifier("enemyCell_" + i , "id", getPackageName());
+                    enemyCell.add(findViewById(resID));
+                }
+
+            }
+        }
 
         for (int i = 0; i < controller.getTeamThisRound().getCells().size(); i++) {
             for (int j = 0; j < 4; j++) {
