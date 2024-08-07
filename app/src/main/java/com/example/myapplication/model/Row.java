@@ -30,4 +30,36 @@ public class Row {
     public void setNumAnswer(TextView numAnswer) {
         this.numAnswer = numAnswer;
     }
+
+    public void setCode(TextView code) {
+        this.code = code;
+    }
+
+    public void setNumGuess(TextView numGuess) {
+        this.numGuess = numGuess;
+    }
+
+    public TextView getTextByIndex(int index){
+        switch (index){
+            case 0:
+                return code;
+            case 1:
+                return numGuess;
+            case 2:
+                return numAnswer;
+            default:
+                return null;
+        }
+    }
+
+    public void setTextByIndex(int index , TextView text){
+        switch (index){
+            case 0:
+                code = text ;
+            case 1:
+                 numGuess = text;
+            case 2:
+                numAnswer = text;
+        }
+    }
 }

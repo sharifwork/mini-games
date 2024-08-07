@@ -8,7 +8,7 @@ public class Team {
     private TextView name;
     private ArrayList<String> players;
     private ArrayList<Cell> cells = new ArrayList<>();
-    private ArrayList<Cell> enemyCells;
+    private ArrayList<Cell> enemyCells = new ArrayList<>();
     private TextView [] words = new TextView[4];
     private Column[] columns = new Column[4];
     private int score;
@@ -21,19 +21,21 @@ public class Team {
         cells.add(new Cell());
         cells.add(new Cell());
 
+        enemyCells.add(new Cell());
+        enemyCells.add(new Cell());
+        enemyCells.add(new Cell());
+        enemyCells.add(new Cell());
+        enemyCells.add(new Cell());
+        enemyCells.add(new Cell());
+
         columns[0] = new Column();
         columns[1] = new Column();
         columns[2] = new Column();
         columns[3] = new Column();
 
-        enemyCells = new ArrayList<>();
     }
     public ArrayList<Cell> getCells() {
         return cells;
-    }
-
-    public ArrayList<Cell> getEnemyBoard() {
-        return enemyCells;
     }
 
     public Column[] getColumns() {

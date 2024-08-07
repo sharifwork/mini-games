@@ -27,4 +27,12 @@ public class Cell {
     public TextView getScore() {
         return score;
     }
+
+    public void setAuthor(TextView author) {
+        this.author = author;
+    }
+
+    public void setScore(TextView score) {
+        this.score = score;
+    }
 }

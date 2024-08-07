@@ -284,6 +284,7 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_1031"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -299,6 +300,7 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_1030"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -333,6 +335,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1002"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -351,6 +354,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1001"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -369,6 +373,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1000"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -390,6 +395,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1012"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -408,6 +414,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1011"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -426,6 +433,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1010"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -447,6 +455,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1022"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -465,6 +474,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1021"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -483,6 +493,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1020"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -518,6 +529,7 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_1131"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -533,6 +545,7 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_1130"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -551,6 +564,7 @@
                         android:layout_weight="1" />
 
                     <LinearLayout
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -567,6 +581,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1102"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -585,6 +600,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1101"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -603,6 +619,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1100"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -624,6 +641,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1112"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -642,6 +660,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1111"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -660,6 +679,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1110"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -681,6 +701,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1122"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -699,6 +720,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1121"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -717,6 +739,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1120"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -752,6 +775,7 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_1231"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -767,6 +791,7 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_1230"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -801,6 +826,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1202"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -819,6 +845,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1201"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -837,6 +864,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1200"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -858,6 +886,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1212"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -876,6 +905,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1211"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -894,6 +924,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1210"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -915,6 +946,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1222"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -933,6 +965,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1221"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -951,6 +984,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1220"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -986,6 +1020,7 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_1331"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -1001,6 +1036,7 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_1330"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -1035,6 +1071,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1302"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1053,6 +1090,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1301"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1071,6 +1109,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1300"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -1092,6 +1131,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1312"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1110,6 +1150,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1311"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1128,6 +1169,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1310"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -1149,6 +1191,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1322"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1167,6 +1210,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1321"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1185,6 +1229,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1320"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -1220,6 +1265,7 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_1431"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -1235,6 +1281,7 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_1430"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -1269,6 +1316,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1402"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1287,6 +1335,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1401"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1305,6 +1354,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1400"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -1326,6 +1376,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1412"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1344,6 +1395,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1411"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1362,6 +1414,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1410"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -1383,6 +1436,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1422"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1401,6 +1455,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1421"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1419,6 +1474,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1420"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -1454,6 +1510,7 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_1531"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -1469,6 +1526,7 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_1530"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -1503,6 +1561,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1502"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1522,6 +1581,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1501"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1541,6 +1601,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1500"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -1562,6 +1623,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1512"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1580,6 +1642,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1511"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1598,6 +1661,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1510"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -1618,7 +1682,9 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1" />
 
+
                             <TextView
+                                android:id="@+id/text_1522"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1636,7 +1702,9 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1" />
 
+
                             <TextView
+                                android:id="@+id/text_1521"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
@@ -1655,6 +1723,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_1520"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -1673,7 +1742,7 @@
         </HorizontalScrollView>
 
         <HorizontalScrollView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
             android:background="@android:drawable/gallery_thumb"
@@ -1708,11 +1777,12 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_2031"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
-                            android:tag="2031"
+                            android:tag="1031"
                             android:text="+1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -1723,11 +1793,12 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_2030"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-thin"
-                            android:tag="2030"
+                            android:tag="1030"
                             android:text="حسن"
                             android:textAlignment="center"
                             android:textSize="18sp"
@@ -1757,13 +1828,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2002"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2002"
+                                android:tag="1002"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1775,13 +1847,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2001"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2001"
+                                android:tag="1001"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1793,11 +1866,12 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2000"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2000"
+                                android:tag="1000"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -1814,13 +1888,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2012"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2012"
+                                android:tag="1012"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1832,13 +1907,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2011"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2011"
+                                android:tag="1011"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1850,11 +1926,12 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2010"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2010"
+                                android:tag="1010"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -1871,13 +1948,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2022"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2022"
+                                android:tag="1022"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1889,13 +1967,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2021"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2021"
+                                android:tag="1021"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -1907,11 +1986,12 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2020"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2020"
+                                android:tag="1020"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -1942,11 +2022,12 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_2131"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
-                            android:tag="2131"
+                            android:tag="1131"
                             android:text="+1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -1957,11 +2038,12 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_2130"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-thin"
-                            android:tag="2130"
+                            android:tag="1130"
                             android:text="حسن"
                             android:textAlignment="center"
                             android:textSize="18sp"
@@ -1975,6 +2057,7 @@
                         android:layout_weight="1" />
 
                     <LinearLayout
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -1991,13 +2074,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2102"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2102"
+                                android:tag="1102"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2009,13 +2093,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2101"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2101"
+                                android:tag="1101"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2027,11 +2112,12 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2100"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2100"
+                                android:tag="1100"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2048,13 +2134,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2112"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2112"
+                                android:tag="1112"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2066,13 +2153,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2111"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2111"
+                                android:tag="1111"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2084,11 +2172,12 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2110"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2110"
+                                android:tag="1110"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2105,13 +2194,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2122"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2122"
+                                android:tag="1122"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2123,13 +2213,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2121"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2121"
+                                android:tag="1121"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2141,11 +2232,12 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2120"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2120"
+                                android:tag="1120"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2176,11 +2268,12 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_2231"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
-                            android:tag="2231"
+                            android:tag="1231"
                             android:text="+1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -2191,11 +2284,12 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_2230"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-thin"
-                            android:tag="2230"
+                            android:tag="1230"
                             android:text="حسن"
                             android:textAlignment="center"
                             android:textSize="18sp"
@@ -2225,13 +2319,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2202"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2202"
+                                android:tag="1202"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2243,13 +2338,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2201"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2201"
+                                android:tag="1201"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2261,11 +2357,12 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2200"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2200"
+                                android:tag="1200"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2282,13 +2379,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2212"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2212"
+                                android:tag="1212"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2300,13 +2398,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2211"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2211"
+                                android:tag="1211"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2318,11 +2417,12 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2210"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2210"
+                                android:tag="1210"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2339,13 +2439,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2222"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2222"
+                                android:tag="1222"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2357,13 +2458,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2221"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2221"
+                                android:tag="1221"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2375,11 +2477,12 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2220"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2220"
+                                android:tag="1220"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2410,11 +2513,12 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_2331"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
-                            android:tag="2331"
+                            android:tag="1331"
                             android:text="+1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -2425,11 +2529,12 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_2330"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-thin"
-                            android:tag="2330"
+                            android:tag="1330"
                             android:text="حسن"
                             android:textAlignment="center"
                             android:textSize="18sp"
@@ -2459,13 +2564,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2302"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2302"
+                                android:tag="1302"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2477,13 +2583,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2301"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2301"
+                                android:tag="1301"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2495,11 +2602,12 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2300"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2300"
+                                android:tag="1300"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2516,13 +2624,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2312"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2312"
+                                android:tag="1312"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2534,13 +2643,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2311"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2311"
+                                android:tag="1311"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2552,11 +2662,12 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2310"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2310"
+                                android:tag="1310"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2573,13 +2684,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2322"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2322"
+                                android:tag="1322"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2591,13 +2703,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2321"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2321"
+                                android:tag="1321"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2609,11 +2722,12 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2320"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2320"
+                                android:tag="1320"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2644,11 +2758,12 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_2431"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
-                            android:tag="2431"
+                            android:tag="1431"
                             android:text="+1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -2659,6 +2774,7 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_2430"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -2693,13 +2809,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2402"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2402"
+                                android:tag="1402"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2711,13 +2828,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2401"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2401"
+                                android:tag="1401"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2729,11 +2847,12 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2400"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2400"
+                                android:tag="1400"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2750,13 +2869,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2412"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2412"
+                                android:tag="1412"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2768,13 +2888,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2411"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2411"
+                                android:tag="1411"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2786,6 +2907,7 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2410"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -2807,13 +2929,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2422"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2422"
+                                android:tag="1422"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2825,13 +2948,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2421"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2421"
+                                android:tag="1421"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2843,11 +2967,12 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2420"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2420"
+                                android:tag="1420"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2878,11 +3003,12 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_2531"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-black"
-                            android:tag="2531"
+                            android:tag="1531"
                             android:text="+1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -2893,11 +3019,12 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/text_2530"
                             android:layout_width="80sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-thin"
-                            android:tag="2530"
+                            android:tag="1530"
                             android:text="حسن"
                             android:textAlignment="center"
                             android:textSize="18sp"
@@ -2927,13 +3054,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2502"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2502"
+                                android:tag="1502"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2945,13 +3073,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2501"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2501"
+                                android:tag="1501"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -2963,11 +3092,12 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2500"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2500"
+                                android:tag="1500"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -2984,13 +3114,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2512"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2512"
+                                android:tag="1512"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -3002,13 +3133,14 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2511"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2511"
+                                android:tag="1511"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -3020,11 +3152,12 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2510"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2510"
+                                android:tag="1510"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -3040,14 +3173,16 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1" />
 
+
                             <TextView
+                                android:id="@+id/text_2522"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@android:color/holo_green_dark"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2522"
+                                android:tag="1522"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -3058,14 +3193,16 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1" />
 
+
                             <TextView
+                                android:id="@+id/text_2521"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:layout_weight="1"
                                 android:background="@android:drawable/screen_background_light_transparent"
                                 android:backgroundTint="@color/material_dynamic_neutral50"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2521"
+                                android:tag="1521"
                                 android:text="1"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
@@ -3077,11 +3214,12 @@
                                 android:layout_weight="1" />
 
                             <TextView
+                                android:id="@+id/text_2520"
                                 android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-black"
-                                android:tag="2520"
+                                android:tag="1520"
                                 android:text="کلمه"
                                 android:textAlignment="center"
                                 android:textSize="20sp" />
@@ -3128,26 +3266,27 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/text_300"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:tag="300"/>
+                        android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/text_301"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
                         android:gravity="center"
                         android:text="کلمه"
                         android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:tag="301"/>
+                        android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/text_302"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3158,6 +3297,7 @@
                         android:tag="302"/>
 
                     <TextView
+                        android:id="@+id/text_303"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3168,6 +3308,7 @@
                         android:tag="303"/>
 
                     <TextView
+                        android:id="@+id/text_304"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3178,6 +3319,7 @@
                         android:tag="304"/>
 
                     <TextView
+                        android:id="@+id/text_305"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3190,6 +3332,7 @@
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/text_306"
                     android:layout_width="match_parent"
                     android:layout_height="27dp"
                     android:layout_marginVertical="5sp"
@@ -3202,6 +3345,7 @@
                     android:tag="306"/>
 
                 <TextView
+                    android:id="@+id/text_307"
                     android:layout_width="80sp"
                     android:layout_height="26dp"
                     android:layout_margin="0sp"
@@ -3243,6 +3387,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/text_310"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3253,6 +3398,7 @@
                         android:tag="310"/>
 
                     <TextView
+                        android:id="@+id/text_311"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3263,6 +3409,7 @@
                         android:tag="311"/>
 
                     <TextView
+                        android:id="@+id/text_312"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3273,6 +3420,7 @@
                         android:tag="312"/>
 
                     <TextView
+                        android:id="@+id/text_313"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3283,6 +3431,7 @@
                         android:tag="313"/>
 
                     <TextView
+                        android:id="@+id/text_314"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3293,6 +3442,7 @@
                         android:tag="314"/>
 
                     <TextView
+                        android:id="@+id/text_315"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3305,6 +3455,7 @@
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/text_316"
                     android:layout_width="match_parent"
                     android:layout_height="27dp"
                     android:layout_marginVertical="5sp"
@@ -3317,6 +3468,7 @@
                     android:tag="316"/>
 
                 <TextView
+                    android:id="@+id/text_317"
                     android:layout_width="80sp"
                     android:layout_height="26dp"
                     android:layout_margin="0sp"
@@ -3358,6 +3510,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/text_320"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3368,6 +3521,7 @@
                         android:tag="320"/>
 
                     <TextView
+                        android:id="@+id/text_321"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3378,6 +3532,7 @@
                         android:tag="321"/>
 
                     <TextView
+                        android:id="@+id/text_322"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3388,6 +3543,7 @@
                         android:tag="322"/>
 
                     <TextView
+                        android:id="@+id/text_323"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3398,6 +3554,7 @@
                         android:tag="323"/>
 
                     <TextView
+                        android:id="@+id/text_324"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3408,6 +3565,7 @@
                         android:tag="324"/>
 
                     <TextView
+                        android:id="@+id/text_325"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3420,6 +3578,7 @@
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/text_326"
                     android:layout_width="match_parent"
                     android:layout_height="27dp"
                     android:layout_marginVertical="5sp"
@@ -3432,6 +3591,7 @@
                     android:tag="326"/>
 
                 <TextView
+                    android:id="@+id/text_327"
                     android:layout_width="80sp"
                     android:layout_height="26dp"
                     android:layout_margin="0sp"
@@ -3473,6 +3633,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/text_330"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3483,6 +3644,7 @@
                         android:tag="330"/>
 
                     <TextView
+                        android:id="@+id/text_331"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3493,6 +3655,7 @@
                         android:tag="331"/>
 
                     <TextView
+                        android:id="@+id/text_332"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3503,6 +3666,7 @@
                         android:tag="332"/>
 
                     <TextView
+                        android:id="@+id/text_333"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3513,6 +3677,7 @@
                         android:tag="333"/>
 
                     <TextView
+                        android:id="@+id/text_334"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3523,6 +3688,7 @@
                         android:tag="334"/>
 
                     <TextView
+                        android:id="@+id/text_335"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="2sp"
@@ -3535,6 +3701,7 @@
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/text_336"
                     android:layout_width="match_parent"
                     android:layout_height="27dp"
                     android:layout_marginVertical="5sp"
@@ -3547,6 +3714,7 @@
                     android:tag="336"/>
 
                 <TextView
+                    android:id="@+id/text_337"
                     android:layout_width="80sp"
                     android:layout_height="26dp"
                     android:layout_margin="0sp"

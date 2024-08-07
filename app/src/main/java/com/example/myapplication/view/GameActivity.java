@@ -15,6 +15,8 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.myapplication.R;
 import com.example.myapplication.controller.GameController;
 import com.example.myapplication.model.Cell;
+import com.example.myapplication.model.Column;
+import com.example.myapplication.model.Row;
 
 import java.util.ArrayList;
 
@@ -36,7 +38,33 @@ public class GameActivity extends AppCompatActivity {
         controller.gameSetup();
         initializeView();
       //  controller.getTeamThisRound().getCells().get(1).getRows()[2].setStringCode("اینجام");
-      //  controller.getTeamThisRound().getColumns()[3].setStringAnswer("ایول");
+        for (Cell cell : controller.getTeamThisRound().getCells()) {
+            cell.getScore().setText("+2");
+            cell.getAuthor().setText("محمد");
+            for (Row row : cell.getRows()) {
+                for (int i = 0; i < 3; i++) {
+                    row.getTextByIndex(i).setText("A");
+                }
+
+            }
+        }
+
+        for (Cell cell : controller.getTeamThisRound().getEnemyCells()) {
+            cell.getScore().setText("+2");
+            cell.getAuthor().setText("علی");
+            for (Row row : cell.getRows()) {
+                for (int i = 0; i < 3; i++) {
+                    row.getTextByIndex(i).setText("C");
+                }
+
+            }
+        }
+
+        for (Column column : controller.getTeamThisRound().getColumns()) {
+            for (int i = 0; i < 8; i++) {
+                column.getTextByIndex(i).setText("B");
+            }
+        }
     }
 
     public void initializeView(){
@@ -46,18 +74,38 @@ public class GameActivity extends AppCompatActivity {
         ((TextView)findViewById(R.id.word3Title)).setText(controller.getTeamThisRound().getWords()[2].getText().toString());
         ((TextView)findViewById(R.id.word4Title)).setText(controller.getTeamThisRound().getWords()[3].getText().toString());
 
-        for (int i = 0; i <((ConstraintLayout)findViewById(R.id.game)).getChildCount() ; i++) {
+        for (int i = 0; i < controller.getTeamThisRound().getCells().size(); i++) {
+            for (int j = 0; j < 4; j++) {
+                for (int k = 0; k < 3 ; k++) {
+                    int resID = getResources().getIdentifier("text_" + 1 + i + j + k, "id", getPackageName());
+                    if(j == 3){
+                        if(k==0) controller.getTeamThisRound().getCells().get(i).setAuthor(findViewById(resID));
+                        else if(k == 1) controller.getTeamThisRound().getCells().get(i).setScore(findViewById(resID));
+                        continue;
+                    }
+                    controller.getTeamThisRound().getCells().get(i).getRows()[j].setTextByIndex(k , findViewById(resID));
+                }
+            }
+        }
 
-            View view = ((ConstraintLayout)findViewById(R.id.game)).getChildAt(i) ;
-            if(view.getTag()!= null){
-                String tag = view.getTag().toString();
-                if(getViewsByTag(tag)!=null) {
-                    View getView = getViewsByTag(tag);
-                    getView = view ;
+        for (int i = 0; i < controller.getTeamThisRound().getEnemyCells().size(); i++) {
+            for (int j = 0; j < 4; j++) {
+                for (int k = 0; k < 3 ; k++) {
+                    int resID = getResources().getIdentifier("text_" + 2 + i + j + k, "id", getPackageName());
+                    if(j == 3){
+                        if(k==0) controller.getTeamThisRound().getEnemyCells().get(i).setAuthor(findViewById(resID));
+                        else if(k == 1) controller.getTeamThisRound().getEnemyCells().get(i).setScore(findViewById(resID));
+                        continue;
+                    }
+                    controller.getTeamThisRound().getEnemyCells().get(i).getRows()[j].setTextByIndex(k , findViewById(resID));
                 }
-                else {
-                    Log.d("hassan" , tag);
-                }
+            }
+        }
+
+        for (int i = 0; i < controller.getTeamThisRound().getColumns().length; i++) {
+            for (int j = 0; j < 8 ; j++) {
+                int resID = getResources().getIdentifier("text_" + 3 + i + j, "id", getPackageName());
+                controller.getTeamThisRound().getColumns()[i].setTextByIndex(j , findViewById(resID));
             }
         }
     }
